@@ -1,0 +1,8 @@
+Flask
+mysqlclient
+Flask-MySQLdb
+csv23
+mysql-connector-python
+mysql-connector
+mysqlclient
+yaml-1.3
