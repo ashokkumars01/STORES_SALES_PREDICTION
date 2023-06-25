@@ -18,14 +18,13 @@ def connect_database():
         mydb = mysql.connector.connect(
                 host = "localhost",
                 user = "root",
-                passwd = "*********",# Give your database password
+                passwd = "********",# Give your database password
                 database = "stores_sales_prediction",
                 auth_plugin='mysql_native_password')
         logging.info("Successfully connected")
         return mydb
     except Exception as e:
         raise CustomException(e, sys)
-        print(e)
 
 
 def read_train_data_from_db(db):
@@ -39,7 +38,6 @@ def read_train_data_from_db(db):
         return ingestion_config.train_data_path
     except Exception as e:
         raise CustomException(e, sys)
-        print(e)
 
 
 def read_test_data_from_db(db):
@@ -53,5 +51,4 @@ def read_test_data_from_db(db):
         return ingestion_config.test_data_path
     except Exception as e:
         raise CustomException(e, sys)
-        print(e)
         
