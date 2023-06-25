@@ -1,0 +1,75 @@
+from flask import Flask, request, render_template
+from flask_cors import cross_origin
+import sklearn
+import pickle
+import pandas as pd
+import os
+import sys
+from logger import logging
+from exception import CustomException
+from data_transformation import Data_Transformer, initiate_data_transform
+from data_ingestion import connect_database, read_train_data_from_db, read_test_data_from_db
+from data_model import Model_Build, DataModelConfig
+from predict_pipeline import Prediction
+from pipeline import Model_Pipeline
+#Model_Pipeline()
+
+app = Flask(__name__)
+model = pickle.load(open(r'F:\DOCUMENTS\Project\STORES_SALES_PREDICTION\saved_models\gradboost_regression.pkl', "rb"))
+
+@app.route("/")
+@cross_origin()
+def home():
+    return render_template("home.html")
+
+@app.route("/predict", methods=["GET", "POST"])
+@cross_origin()
+def predict():
+    if request.method == "POST":
+
+        # Item_Weight
+        Item_Weight = float(request.form["Item_Weight"])
+
+        # Item_Fat_Content
+        Item_Fat_Content = int(request.form["Item_Fat_Content"])
+
+        # Item_Visibility
+        Item_Visibility = float(request.form["Item_Visibility"])
+
+        # Item_Type
+        Item_Type = int(request.form["Item_Type"])
+
+        # Item_MRP
+        Item_MRP = float(request.form["Item_MRP"])
+
+        # Outlet_Identifier
+        Outlet_Identifier = int(request.form["Outlet_Identifier"])
+
+        # Outlet_Establishment_Year
+        Outlet_Establishment_Year = int(request.form["Outlet_Establishment_Year"])
+
+        # Outlet_Size
+        Outlet_Size = int(request.form["Outlet_Size"])
+
+        # Outlet_Location_Type
+        Outlet_Location_Type = int(request.form["Outlet_Location_Type"])
+
+        # Outlet_Type
+        Outlet_Type = int(request.form["Outlet_Type"])
+
+        prediction = model.predict([[Item_Weight, Item_Fat_Content, Item_Visibility, Item_Type,
+                                     Item_MRP, Outlet_Identifier, Outlet_Establishment_Year, Outlet_Size,
+                                     Outlet_Location_Type, Outlet_Type]])
+
+        output = round(prediction[0],4)
+
+        return render_template('home.html',prediction_text="Item Outlet Sales is. {}".format(output))
+
+    return render_template("home.html")
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)
+
+
+
+        

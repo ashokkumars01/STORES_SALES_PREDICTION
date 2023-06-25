@@ -19,7 +19,8 @@ def Data_Transformer(train_data_path, test_data_path):
     Data Transformation for Train data
     '''
     transformation_config = DataTransformationConfig()
-    logging.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Started data transformation for Train Data >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    logging.info("Started data transformation for Train Data")
+    
     logging.info("Started reading the train data")
     try:
         train_data = pd.read_csv(train_data_path)
@@ -98,12 +99,12 @@ def Data_Transformer(train_data_path, test_data_path):
     except Exception as e:
         raise CustomException(e, sys)
     
-    logging.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Completed data transformation for Train Data >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    logging.info("Completed data transformation for Train Data")
     
     '''
     Data Transformation for Test data
     '''
-    logging.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Started data transformation for Test Data >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    logging.info("Started data transformation for Test Data")
     logging.info("Started reading the test data")
     try:
         test_data = pd.read_csv(test_data_path)
@@ -182,7 +183,7 @@ def Data_Transformer(train_data_path, test_data_path):
     except Exception as e:
         raise CustomException(e, sys)
     
-    logging.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Completed data transformation for Test Data >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    logging.info("Completed data transformation for Test Data")
     
     os.makedirs(os.path.dirname(transformation_config.processed_train_data_path), exist_ok=True)
     train_data.to_csv(transformation_config.processed_train_data_path, index=False, header=True)
