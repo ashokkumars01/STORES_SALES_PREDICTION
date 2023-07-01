@@ -18,7 +18,7 @@ def connect_database():
         mydb = mysql.connector.connect(
                 host = "localhost",
                 user = "root",
-                passwd = "A@2000shok",# Give your database password
+                passwd = "******",# Give your database password
                 database = "stores_sales_prediction",
                 auth_plugin='mysql_native_password')
         logging.info("Successfully connected")
