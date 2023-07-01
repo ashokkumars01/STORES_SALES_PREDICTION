@@ -19,5 +19,6 @@ def Prediction(model_path, processed_test_data_path):
         logging.info("Prediction on test data completed")
         return prediction
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
         

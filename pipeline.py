@@ -27,6 +27,7 @@ def Model_Pipeline():
         logging.info("Pipeline completed")
 
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
 
 Model_Pipeline()

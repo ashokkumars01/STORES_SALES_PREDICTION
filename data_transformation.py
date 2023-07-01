@@ -26,6 +26,7 @@ def Data_Transformer(train_data_path, test_data_path):
         train_data = pd.read_csv(train_data_path)
         logging.info("Reading the train data completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     train_data.drop('Item_Identifier',axis=1, inplace=True)
@@ -37,6 +38,7 @@ def Data_Transformer(train_data_path, test_data_path):
             c1 = (train_data['Item_Type']==mean.index[i])&(train_data['Item_Weight'].isna()==True)
             train_data['Item_Weight'] = np.select([c1], [mean[i]], train_data['Item_Weight'])
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     logging.info("Completed filling the null values")
 
@@ -45,6 +47,7 @@ def Data_Transformer(train_data_path, test_data_path):
         train_data['Outlet_Size'].fillna(mode(train_data['Outlet_Size']),inplace=True)
         logging.info("Filling null values of Outlet size is completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started replacing the values of Item fat content")
@@ -55,6 +58,7 @@ def Data_Transformer(train_data_path, test_data_path):
         train_data["Item_Fat_Content"]= train_data["Item_Fat_Content"].replace(fat_content)
         logging.info("Replacing the values of Item fat content completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     le = LabelEncoder()
@@ -65,10 +69,13 @@ def Data_Transformer(train_data_path, test_data_path):
             train_data[i] = le.fit_transform(train_data[i])
             logging.info("Applying label encoding to Item type and Outlet identifier completed")
     except ValueError as val:
+        logging.exception(val)
         raise CustomException(val, sys)
     except KeyError as key:
+        logging.exception(key)
         raise CustomException(key, sys)
     except NameError as name:
+        logging.exception(name)
         raise CustomException(name, sys)
     
     logging.info("Started Label encoding to Item fat content")
@@ -76,6 +83,7 @@ def Data_Transformer(train_data_path, test_data_path):
         train_data.replace({"Low Fat":0, "Regular":1}, inplace=True)
         logging.info("Label encoding to Item fat content completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started Label encoding to outlet size")
@@ -83,6 +91,7 @@ def Data_Transformer(train_data_path, test_data_path):
         train_data.replace({"Small":0, "Medium":1, "High":2}, inplace=True)
         logging.info("Label encoding to outlet size completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started Label encoding to outlet location type")
@@ -90,6 +99,7 @@ def Data_Transformer(train_data_path, test_data_path):
         train_data.replace({"Tier 1":0, "Tier 2":1, "Tier 3":2}, inplace=True)
         logging.info(" Label encoding to outlet location type completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started Label encoding to outlet type")
@@ -97,6 +107,7 @@ def Data_Transformer(train_data_path, test_data_path):
         train_data.replace({"Grocery Store":0, "Supermarket Type1":1, "Supermarket Type2":2, "Supermarket Type3":3}, inplace=True)
         logging.info("Label encoding to outlet type completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Completed data transformation for Train Data")
@@ -110,6 +121,7 @@ def Data_Transformer(train_data_path, test_data_path):
         test_data = pd.read_csv(test_data_path)
         logging.info("Reading the test data completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     test_data.drop('Item_Identifier',axis=1, inplace=True)
@@ -121,6 +133,7 @@ def Data_Transformer(train_data_path, test_data_path):
             c1 = (test_data['Item_Type']==mean.index[i])&(test_data['Item_Weight'].isna()==True)
             test_data['Item_Weight'] = np.select([c1], [mean[i]], test_data['Item_Weight'])
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     logging.info("Completed filling the null values")
 
@@ -129,6 +142,7 @@ def Data_Transformer(train_data_path, test_data_path):
         test_data['Outlet_Size'].fillna(mode(test_data['Outlet_Size']),inplace=True)
         logging.info("Filling null values of Outlet size is completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started replacing the values of Item fat content")
@@ -139,6 +153,7 @@ def Data_Transformer(train_data_path, test_data_path):
         test_data["Item_Fat_Content"]= test_data["Item_Fat_Content"].replace(fat_content)
         logging.info("Replacing the values of Item fat content completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     le = LabelEncoder()
@@ -149,10 +164,13 @@ def Data_Transformer(train_data_path, test_data_path):
             test_data[i] = le.fit_transform(test_data[i])
             logging.info("Applying label encoding to Item type and Outlet identifier completed")
     except ValueError as val:
+        logging.exception(val)
         raise CustomException(val, sys)
     except KeyError as key:
+        logging.exception(key)
         raise CustomException(key, sys)
     except NameError as name:
+        logging.exception(name)
         raise CustomException(name, sys)
     
     logging.info("Started Label encoding to Item fat content")
@@ -160,6 +178,7 @@ def Data_Transformer(train_data_path, test_data_path):
         test_data.replace({"Low Fat":0, "Regular":1}, inplace=True)
         logging.info("Label encoding to Item fat content completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started Label encoding to outlet size")
@@ -167,6 +186,7 @@ def Data_Transformer(train_data_path, test_data_path):
         test_data.replace({"Small":0, "Medium":1, "High":2}, inplace=True)
         logging.info("Label encoding to outlet size completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started Label encoding to outlet location type")
@@ -174,6 +194,7 @@ def Data_Transformer(train_data_path, test_data_path):
         test_data.replace({"Tier 1":0, "Tier 2":1, "Tier 3":2}, inplace=True)
         logging.info(" Label encoding to outlet location type completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Started Label encoding to outlet type")
@@ -181,6 +202,7 @@ def Data_Transformer(train_data_path, test_data_path):
         test_data.replace({"Grocery Store":0, "Supermarket Type1":1, "Supermarket Type2":2, "Supermarket Type3":3}, inplace=True)
         logging.info("Label encoding to outlet type completed")
     except Exception as e:
+        logging.exception(e)
         raise CustomException(e, sys)
     
     logging.info("Completed data transformation for Test Data")
