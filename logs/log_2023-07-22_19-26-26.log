@@ -1,0 +1,144 @@
+[ 2023-07-22 19:26:37,912 ] 16 root - INFO - Connecting to a Database
+[ 2023-07-22 19:27:06,213 ] 24 root - INFO - Successfully connected
+[ 2023-07-22 19:27:06,213 ] 33 root - INFO - Reading the Train data from the database
+[ 2023-07-22 19:27:19,837 ] 38 root - INFO - Reading the Train data successful
+[ 2023-07-22 19:27:19,852 ] 47 root - INFO - Reading the test data from the database
+[ 2023-07-22 19:27:21,084 ] 52 root - INFO - Reading the test data successful
+[ 2023-07-22 19:27:21,288 ] 22 root - INFO - Started data transformation for Train Data
+[ 2023-07-22 19:27:21,288 ] 24 root - INFO - Started reading the train data
+[ 2023-07-22 19:27:21,975 ] 27 root - INFO - Reading the train data completed
+[ 2023-07-22 19:27:22,402 ] 34 root - INFO -  Started Filling the null Values of Item weight
+[ 2023-07-22 19:27:22,871 ] 43 root - INFO - Completed filling the null values
+[ 2023-07-22 19:27:22,871 ] 45 root - INFO - Started filling null values of Outlet size
+[ 2023-07-22 19:27:22,887 ] 48 root - INFO - Filling null values of Outlet size is completed
+[ 2023-07-22 19:27:22,887 ] 53 root - INFO - Started replacing the values of Item fat content
+[ 2023-07-22 19:27:23,295 ] 59 root - INFO - Replacing the values of Item fat content completed
+[ 2023-07-22 19:27:23,295 ] 65 root - INFO - Applying label encoding to Item type and Outlet identifier
+[ 2023-07-22 19:27:23,311 ] 70 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:23,311 ] 70 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:23,311 ] 81 root - INFO - Started Label encoding to Item fat content
+[ 2023-07-22 19:27:23,311 ] 84 root - INFO - Label encoding to Item fat content completed
+[ 2023-07-22 19:27:23,311 ] 89 root - INFO - Started Label encoding to outlet size
+[ 2023-07-22 19:27:23,327 ] 92 root - INFO - Label encoding to outlet size completed
+[ 2023-07-22 19:27:23,327 ] 97 root - INFO - Started Label encoding to outlet location type
+[ 2023-07-22 19:27:23,327 ] 100 root - INFO -  Label encoding to outlet location type completed
+[ 2023-07-22 19:27:23,327 ] 105 root - INFO - Started Label encoding to outlet type
+[ 2023-07-22 19:27:23,342 ] 108 root - INFO - Label encoding to outlet type completed
+[ 2023-07-22 19:27:23,342 ] 113 root - INFO - Completed data transformation for Train Data
+[ 2023-07-22 19:27:23,342 ] 118 root - INFO - Started data transformation for Test Data
+[ 2023-07-22 19:27:23,342 ] 119 root - INFO - Started reading the test data
+[ 2023-07-22 19:27:23,374 ] 122 root - INFO - Reading the test data completed
+[ 2023-07-22 19:27:23,374 ] 129 root - INFO -  Started Filling the null Values of Item weight
+[ 2023-07-22 19:27:23,405 ] 138 root - INFO - Completed filling the null values
+[ 2023-07-22 19:27:23,405 ] 140 root - INFO - Started filling null values of Outlet size
+[ 2023-07-22 19:27:23,405 ] 143 root - INFO - Filling null values of Outlet size is completed
+[ 2023-07-22 19:27:23,405 ] 148 root - INFO - Started replacing the values of Item fat content
+[ 2023-07-22 19:27:23,405 ] 154 root - INFO - Replacing the values of Item fat content completed
+[ 2023-07-22 19:27:23,405 ] 160 root - INFO - Applying label encoding to Item type and Outlet identifier
+[ 2023-07-22 19:27:23,420 ] 165 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:23,420 ] 165 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:23,420 ] 176 root - INFO - Started Label encoding to Item fat content
+[ 2023-07-22 19:27:23,420 ] 179 root - INFO - Label encoding to Item fat content completed
+[ 2023-07-22 19:27:23,420 ] 184 root - INFO - Started Label encoding to outlet size
+[ 2023-07-22 19:27:23,436 ] 187 root - INFO - Label encoding to outlet size completed
+[ 2023-07-22 19:27:23,436 ] 192 root - INFO - Started Label encoding to outlet location type
+[ 2023-07-22 19:27:23,436 ] 195 root - INFO -  Label encoding to outlet location type completed
+[ 2023-07-22 19:27:23,436 ] 200 root - INFO - Started Label encoding to outlet type
+[ 2023-07-22 19:27:23,659 ] 203 root - INFO - Label encoding to outlet type completed
+[ 2023-07-22 19:27:23,660 ] 208 root - INFO - Completed data transformation for Test Data
+[ 2023-07-22 19:27:45,039 ] 12 root - INFO - Pipeline started
+[ 2023-07-22 19:27:45,039 ] 16 root - INFO - Connecting to a Database
+[ 2023-07-22 19:27:46,338 ] 24 root - INFO - Successfully connected
+[ 2023-07-22 19:27:46,338 ] 33 root - INFO - Reading the Train data from the database
+[ 2023-07-22 19:27:47,235 ] 38 root - INFO - Reading the Train data successful
+[ 2023-07-22 19:27:47,238 ] 47 root - INFO - Reading the test data from the database
+[ 2023-07-22 19:27:47,546 ] 52 root - INFO - Reading the test data successful
+[ 2023-07-22 19:27:47,546 ] 22 root - INFO - Started data transformation for Train Data
+[ 2023-07-22 19:27:47,546 ] 24 root - INFO - Started reading the train data
+[ 2023-07-22 19:27:47,609 ] 27 root - INFO - Reading the train data completed
+[ 2023-07-22 19:27:47,609 ] 34 root - INFO -  Started Filling the null Values of Item weight
+[ 2023-07-22 19:27:47,640 ] 43 root - INFO - Completed filling the null values
+[ 2023-07-22 19:27:47,640 ] 45 root - INFO - Started filling null values of Outlet size
+[ 2023-07-22 19:27:47,640 ] 48 root - INFO - Filling null values of Outlet size is completed
+[ 2023-07-22 19:27:47,640 ] 53 root - INFO - Started replacing the values of Item fat content
+[ 2023-07-22 19:27:47,640 ] 59 root - INFO - Replacing the values of Item fat content completed
+[ 2023-07-22 19:27:47,640 ] 65 root - INFO - Applying label encoding to Item type and Outlet identifier
+[ 2023-07-22 19:27:47,640 ] 70 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:47,656 ] 70 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:47,656 ] 81 root - INFO - Started Label encoding to Item fat content
+[ 2023-07-22 19:27:47,656 ] 84 root - INFO - Label encoding to Item fat content completed
+[ 2023-07-22 19:27:47,656 ] 89 root - INFO - Started Label encoding to outlet size
+[ 2023-07-22 19:27:47,671 ] 92 root - INFO - Label encoding to outlet size completed
+[ 2023-07-22 19:27:47,671 ] 97 root - INFO - Started Label encoding to outlet location type
+[ 2023-07-22 19:27:47,671 ] 100 root - INFO -  Label encoding to outlet location type completed
+[ 2023-07-22 19:27:47,671 ] 105 root - INFO - Started Label encoding to outlet type
+[ 2023-07-22 19:27:47,687 ] 108 root - INFO - Label encoding to outlet type completed
+[ 2023-07-22 19:27:47,687 ] 113 root - INFO - Completed data transformation for Train Data
+[ 2023-07-22 19:27:47,687 ] 118 root - INFO - Started data transformation for Test Data
+[ 2023-07-22 19:27:47,687 ] 119 root - INFO - Started reading the test data
+[ 2023-07-22 19:27:47,718 ] 122 root - INFO - Reading the test data completed
+[ 2023-07-22 19:27:47,734 ] 129 root - INFO -  Started Filling the null Values of Item weight
+[ 2023-07-22 19:27:47,765 ] 138 root - INFO - Completed filling the null values
+[ 2023-07-22 19:27:47,765 ] 140 root - INFO - Started filling null values of Outlet size
+[ 2023-07-22 19:27:47,765 ] 143 root - INFO - Filling null values of Outlet size is completed
+[ 2023-07-22 19:27:47,765 ] 148 root - INFO - Started replacing the values of Item fat content
+[ 2023-07-22 19:27:47,765 ] 154 root - INFO - Replacing the values of Item fat content completed
+[ 2023-07-22 19:27:47,765 ] 160 root - INFO - Applying label encoding to Item type and Outlet identifier
+[ 2023-07-22 19:27:47,765 ] 165 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:47,765 ] 165 root - INFO - Applying label encoding to Item type and Outlet identifier completed
+[ 2023-07-22 19:27:47,765 ] 176 root - INFO - Started Label encoding to Item fat content
+[ 2023-07-22 19:27:47,781 ] 179 root - INFO - Label encoding to Item fat content completed
+[ 2023-07-22 19:27:47,781 ] 184 root - INFO - Started Label encoding to outlet size
+[ 2023-07-22 19:27:47,781 ] 187 root - INFO - Label encoding to outlet size completed
+[ 2023-07-22 19:27:47,781 ] 192 root - INFO - Started Label encoding to outlet location type
+[ 2023-07-22 19:27:47,796 ] 195 root - INFO -  Label encoding to outlet location type completed
+[ 2023-07-22 19:27:47,796 ] 200 root - INFO - Started Label encoding to outlet type
+[ 2023-07-22 19:27:47,796 ] 203 root - INFO - Label encoding to outlet type completed
+[ 2023-07-22 19:27:47,796 ] 208 root - INFO - Completed data transformation for Test Data
+[ 2023-07-22 19:27:48,390 ] 28 root - INFO - Started Feature selection
+[ 2023-07-22 19:27:48,390 ] 32 root - INFO - Feature selection completed
+[ 2023-07-22 19:27:48,390 ] 37 root - INFO - Started splitting the data into Train and Test set
+[ 2023-07-22 19:27:48,687 ] 40 root - INFO - Splitting the data into Train and Test set completed
+[ 2023-07-22 19:27:48,687 ] 50 root - INFO - Started fitting Model Using Linear Regression
+[ 2023-07-22 19:27:53,263 ] 56 root - INFO - Fitting Model Using Linear Regression completed
+[ 2023-07-22 19:27:53,263 ] 61 root - INFO - Saving the Linear Regression model
+[ 2023-07-22 19:27:53,362 ] 67 root - INFO - Saving the Linear Regression model completed
+[ 2023-07-22 19:27:53,362 ] 77 root - INFO - Started fitting Model Using ExtraTree Regression
+[ 2023-07-22 19:27:56,350 ] 83 root - INFO - Fitting Model Using ExtraTree Regression completed
+[ 2023-07-22 19:27:56,350 ] 88 root - INFO - Saving the ExtraTree Regression model
+[ 2023-07-22 19:27:57,538 ] 94 root - INFO - Saving the ExtraTree Regression model completed
+[ 2023-07-22 19:27:57,538 ] 104 root - INFO - Started fitting Model Using Gradient Boosting Regression
+[ 2023-07-22 19:27:58,593 ] 110 root - INFO - Fitting Model Using Gradient Boosting Regression completed
+[ 2023-07-22 19:27:58,593 ] 115 root - INFO - Saving the Gradient Boosting Regression model
+[ 2023-07-22 19:27:58,734 ] 121 root - INFO - Saving the Gradient Boosting Regression model completed
+[ 2023-07-22 19:27:58,749 ] 14 root - INFO - Started prediction on test data
+[ 2023-07-22 19:27:59,576 ] 19 root - INFO - Prediction on test data completed
+[ 2023-07-22 19:27:59,576 ] 27 root - INFO - Pipeline completed
+[ 2023-07-22 19:27:59,732 ] 22 root - INFO - Model is loading
+[ 2023-07-22 19:27:59,748 ] 24 root - INFO - Model loading is completed
+[ 2023-07-22 19:28:00,705 ] 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2023-07-22 19:28:00,705 ] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-07-22 19:57:03,570 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 19:57:03] "GET / HTTP/1.1" 200 -
+[ 2023-07-22 19:57:03,753 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 19:57:03] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 19:57:09,045 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 19:57:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:00:28,105 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:00:28] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:00:28,213 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:00:28] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:06:51,016 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:06:51] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:06:51,031 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:06:51] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:07:04,813 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:07:04] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:07:04,843 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:07:04] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:07:09,292 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:07:09] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:07:09,596 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:07:09] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:10:22,207 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:10:22] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:10:22,329 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:10:22] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:17:20,877 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:17:20] "GET / HTTP/1.1" 200 -
+[ 2023-07-22 20:17:21,232 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:17:21] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:23:20,323 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:23:20] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:23:20,533 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:23:20] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:47:25,174 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:47:25] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:47:25,539 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:47:25] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:47:30,782 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:47:30] "GET / HTTP/1.1" 200 -
+[ 2023-07-22 20:47:30,813 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:47:30] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-07-22 20:49:57,343 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:49:57] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-22 20:49:57,488 ] 187 werkzeug - INFO - 127.0.0.1 - - [22/Jul/2023 20:49:57] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -

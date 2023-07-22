@@ -12,12 +12,12 @@ from data_ingestion import connect_database, read_train_data_from_db, read_test_
 from data_model import Model_Build, DataModelConfig
 from predict_pipeline import Prediction
 from pipeline import Model_Pipeline
-#Model_Pipeline()
+
 DIR = 'saved_models'
 MODEL_DIR = 'gradboost_regression.pkl'
 MODEL_PATH = os.path.join(DIR, MODEL_DIR)
 app = Flask(__name__)
-#model = pickle.load(open(r'F:\DOCUMENTS\Project\STORES_SALES_PREDICTION\saved_models\gradboost_regression.pkl', "rb"))
+
 try:
     logging.info("Model is loading")
     model = pickle.load(open(MODEL_PATH, "rb"))
@@ -78,7 +78,7 @@ def predict():
     return render_template("home.html")
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run()
 
 
 

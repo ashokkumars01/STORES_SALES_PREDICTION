@@ -6,3 +6,5 @@ scikit-learn
 pandas
 Flask-Cors
 seaborn
+flask-ngrok
+pycopy-webbrowser
